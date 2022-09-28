@@ -1,13 +1,13 @@
 
 import './App.css';
 import Header from './components/Header/Header';
-import Items from './components/Items/Items';
+import Shop from './components/Shop/Shop';
 
 function App() {
   return (
     <div>
       <Header></Header>
-      <Items></Items>
+      <Shop></Shop>
     </div>
   );
 }
