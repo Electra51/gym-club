@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className='nav'>
             <img className='logo' src={logo} alt="" />
-            <h3> GYM-CLUB</h3>
+            <h2> GYM-CLUB</h2>
         </nav>
     );
 };

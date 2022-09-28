@@ -1,4 +1,14 @@
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    grid-gap: 65px;
+    background-color: rgb(131, 132, 134);
+    
+}
+.Shop-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap:35px;
+    justify-items: center;
+
 }

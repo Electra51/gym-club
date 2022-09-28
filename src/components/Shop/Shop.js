@@ -11,7 +11,9 @@ const Shop = () => {
     }, [])
     return (
         <div className='container'>
+            
             <div className="Shop-container">
+                
                 {
                     products.map(product => <Product
                         key={product.id}

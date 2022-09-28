@@ -1,0 +1,39 @@
+.product{
+    margin-top: 30px;
+    height: 390px;
+    width:260px;
+    font-family: 'lato';
+    border: 1px solid rgb(207, 231, 238);
+    border-radius: 6px;
+    position: relative;
+    
+    
+}
+
+.product img{
+    height: 180px;
+    width:260px;
+    
+    border-radius: 6px;
+
+}
+.para{
+    color: rgb(59, 57, 57);
+}
+.info {
+    padding: 0 6px;
+}
+.btn-info{
+    width: 100%;
+    border: none;
+    background-color: rgb(22, 92, 158);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.btn-info:hover{
+    background-color: blue;
+    
+}
