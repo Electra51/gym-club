@@ -1,0 +1,15 @@
+.logo{
+    height: 38px;
+    width: 38px;
+    
+}
+.nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+h3{
+    color: white;
+    padding-left: 10px;
+}
