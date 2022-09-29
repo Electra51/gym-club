@@ -1,9 +1,11 @@
 import React from 'react';
+import './Cart.css';
 import image from '../../images/profile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 const notify = () => {
     toast("Congratulation! you're done with new activity")
@@ -61,7 +63,8 @@ const Cart = (props) => {
                 </div>
                 <div className='details'>
                     <p>Break Time: 00.00m</p>
-                </div>
+            </div>
+            
                 <button onClick={notify} className='btn-activity'>Activity Completed</button>
         </div>
     );

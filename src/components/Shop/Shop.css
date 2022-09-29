@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap: 65px;
-    background-color: rgb(131, 132, 134);
+    background-color: rgb(192, 192, 192);
     
     
 }
@@ -24,94 +24,62 @@
     top:0;
 }
 
-.my-profile img{
-    height: 50px;
-    width: 50px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
 
-.my-profile{
-    background-color: rgb(80, 81, 92);
-    display: flex;
-    justify-content: center;
+/* for mobile */
+@media only screen and (max-width: 688px) {
+    .container{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 65px;
+        background-color: rgb(192, 192, 192);
+        
+    }
+
+    .Shop-container{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-gap:65px;
+        grid-row-gap: 40px;
+        margin-left: 50px;
+        width:260px;
+        
     
+    }
+    .select-container{
+        background-color: rgb(80, 81, 92); 
+        height: 500px;
+    }
+   
+
+
+}
+/* for tablet view */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+
+    .container{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 65px;
+        background-color: rgb(192, 192, 192);
+        
+        
+    }
+
+    .Shop-container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap:65px;
+        grid-row-gap: 40px;
+        margin-left: 50px;
+        width:260px;
+        
     
-}
-.profile-info h4{
-    margin: 0px;
-    margin-left: 8px;
-    margin-top: 20px;
-}
-.profile-info p{
-    margin: 0px;
-    margin-left: 3px;
-    
-}
-.location{
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-.height-div{
-    display: flex;
-    
-    justify-content: space-between;
-    background-color:rgb(131, 132, 134) ;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 7px;
-}
-.Age{
-    margin: 0 2px;
-}
-.yrs{
-    margin: 0px ;
-    padding-left: 0;
-    color: black;
-}
-.break{
-    display: flex;
-    justify-content: space-between;
-    background-color:rgb(131, 132, 134) ;
-    margin: 10px;
-    padding: 18px;
-    border-radius: 8px;
-}
-.Add-break{
-    margin-left: 10px;
-}
-.break p{
-    background-color: white;
-    padding: 2px;
-    border-radius: 4px;
-    margin: 0;
-}
-.break p:hover{
-    background-color: rgb(41, 81, 141);
-    color: white;
-}
-.details{
-    margin: 10px;
-    background-color:rgb(131, 132, 134) ;
-    border-radius: 5px;
-}
-.details p{
-    padding: 5px;
-}
-.btn-activity{
-    background-color:rgb(193, 196, 201) ;
-    border: none;
-    border-radius: 5px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    padding: 8px;
-    box-shadow: 0 0 3px;
-}
-.btn-activity:hover{
-    background-color: blue;
-    color: white;
+    }
+    .select-container{
+        background-color: rgb(80, 81, 92); 
+        height: 500px;
+        width: 100%;
+        
+    }
+   
 }

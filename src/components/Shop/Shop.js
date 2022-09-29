@@ -12,6 +12,7 @@ import Cart from '../Cart/Cart';
 
 
 
+
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [list, setList] = useState([]);
@@ -26,7 +27,8 @@ const Shop = () => {
         setList(newList);
 }
     return (
-        <div className='container'>
+        <div>
+             <div className='container'>
             
             <div className="Shop-container">
                 
@@ -46,8 +48,11 @@ const Shop = () => {
                <Cart cart={list}></Cart>
                
             </div>
-            <Question></Question>
-      </div>
+           
+        </div>
+        <Question></Question>
+       </div>
+         
     );
 };
 

@@ -1,4 +1,6 @@
 
+
+
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Header from './components/Header/Header';
@@ -9,7 +11,7 @@ function App() {
     <div>
       <Header></Header>
       <Shop></Shop>
-      <ToastContainer></ToastContainer>
+    <ToastContainer></ToastContainer>
       
     </div>
   );
