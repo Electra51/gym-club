@@ -8,7 +8,9 @@
 .Shop-container{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    grid-gap:35px;
-    justify-items: center;
+    grid-gap:65px;
+    grid-row-gap: 40px;
+    margin-left: 50px;
+    width:260px;
 
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import Question from '../Question/Question';
 import './Shop.css';
 
 const Shop = () => {
@@ -14,18 +15,26 @@ const Shop = () => {
             
             <div className="Shop-container">
                 
+                
                 {
                     products.map(product => <Product
                         key={product.id}
                         product={product}
                     ></Product>
                     )
-               }
+                }
+                
 
             </div>
             <div className="select-container">
-                <h1>dfghgj</h1>
+                <div>
+                    <img src="" alt="" />
+                    <h4>Electra Nur</h4>
+                    <p>Dhaka,Bangladesh</p>
+                    
+               </div>
             </div>
+            <Question></Question>
       </div>
     );
 };
