@@ -1,11 +1,14 @@
 import React from 'react';
 import './Product.css';
 const Product = (props) => {
-    const { name, img, paragraph, time } = props.product;
+    const { product, handleAddToList} = props;
+    const { name, img, paragraph, time } = product;
     
+
     return (
         
         <div className='product'>
+            
             
             <div>
                 <img src={img} alt="" />
@@ -15,7 +18,7 @@ const Product = (props) => {
             <p>Time:{time}m</p>
            
             </div>
-            <button className='btn-info'>
+            <button onClick={()=> handleAddToList(product)} className='btn-info'>
                 <p>Add to List</p>
             </button>
             </div>

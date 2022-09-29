@@ -3,14 +3,22 @@ import Product from '../Product/Product';
 import Question from '../Question/Question';
 import './Shop.css';
 import image from '../../images/profile.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationPin} from '@fortawesome/free-solid-svg-icons';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [list, setList] = useState([]);
     useEffect(() => {
         fetch('products.json')
         .then(res => res.json())
         .then(data=> setProducts(data))
     }, [])
+    const handleAddToList = (product) => {
+        console.log(product);
+        const newList = [...list, product];
+        setList(newList);
+}
     return (
         <div className='container'>
             
@@ -21,6 +29,7 @@ const Shop = () => {
                     products.map(product => <Product
                         key={product.id}
                         product={product}
+                        handleAddToList={handleAddToList}
                     ></Product>
                     )
                 }
@@ -32,7 +41,10 @@ const Shop = () => {
                 <img src={image} alt="" />
                 <div className='profile-info'>
                 <h4>Electra Nur</h4>
+                        <div className='location'>
+                        <FontAwesomeIcon icon={(faLocationPin)}></FontAwesomeIcon>
                 <p>Dhaka,Bangladesh</p>
+               </div>
                   </div>
                 </div>
                 <div className="height-div">
@@ -69,7 +81,7 @@ const Shop = () => {
                 <div className='details'>
                     <p>Break Time: 00.00m</p>
                 </div>
-                <button className='btn'>Activity Completed</button>
+                <button className='btn-activity'>Activity Completed</button>
             </div>
             <Question></Question>
       </div>
