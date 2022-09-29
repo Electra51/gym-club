@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb} from '../../utilities/fakedb';
 import Product from '../Product/Product';
 import Question from '../Question/Question';
 import './Shop.css';
@@ -18,14 +19,20 @@ const Shop = () => {
     const [list, setList] = useState([]);
     useEffect(() => {
         fetch('products.json')
-        .then(res => res.json())
-        .then(data=> setProducts(data))
+            .then(res => res.json())
+            .then(data => setProducts(data))
     }, [])
+    useEffect(() => {
+        
+    },[])
     const handleAddToList = (product) => {
         console.log(product);
         const newList = [...list, product];
         setList(newList);
-}
+        addToDb(product.id);
+    }
+  
+    
     return (
         <div>
              <div className='container'>
@@ -38,14 +45,18 @@ const Shop = () => {
                         key={product.id}
                         product={product}
                         handleAddToList={handleAddToList}
+                        
                     ></Product>
-                    )
+                        )
+                    
                 }
                 
 
             </div>
             <div className="select-container">
-               <Cart cart={list}></Cart>
+                    <Cart cart={list}></Cart>
+                    
+               
                
             </div>
            

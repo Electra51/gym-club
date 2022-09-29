@@ -1,10 +1,12 @@
-import React from 'react';
+
 import './Cart.css';
 import image from '../../images/profile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
+
 
 
 const notify = () => {
@@ -12,12 +14,18 @@ const notify = () => {
 }
 
 const Cart = (props) => {
+    
+
+    
     const { cart } = props;
+    const [count, setCount] = useState(0);
+    
 
     let total = 0;
     for (const product of cart) {
         total = total + product.time;
     }
+    
     return (
         <div>
              <div className=' my-profile'>
@@ -49,11 +57,11 @@ const Cart = (props) => {
                 <h4 className='Add-break'>Add a break</h4>
                 <div className='break'>
                     
-                        <p>10m</p>
-                        <p>20m</p>
-                        <p>30m</p>
-                        <p>40m</p>
-                        <p>50m</p>
+                        <button onClick={()=>setCount(10)} >10m</button>
+                        <button onClick={()=>setCount(20)}>20m</button>
+                        <button onClick={()=>setCount(30)}>30m</button>
+                        <button onClick={()=>setCount(40)}>40m</button>
+                        <button onClick={()=>setCount(50)}>50m</button>
                    
 
                 </div>
@@ -62,7 +70,7 @@ const Cart = (props) => {
                     <p>Total Time: {total}m</p>
                 </div>
                 <div className='details'>
-                    <p>Break Time: 00.00m</p>
+                    <p>Break Time: {count}m</p>
             </div>
             
                 <button onClick={notify} className='btn-activity'>Activity Completed</button>

@@ -56,16 +56,7 @@
 .Add-break{
     margin-left: 10px;
 }
-.break p{
-    background-color: white;
-    padding: 2px;
-    border-radius: 4px;
-    margin: 0;
-}
-.break p:hover{
-    background-color: rgb(41, 81, 141);
-    color: white;
-}
+
 .details{
     margin: 10px;
     background-color:rgb(131, 132, 134) ;
@@ -88,4 +79,7 @@
 .btn-activity:hover{
     background-color: blue;
     color: white;
+}
+.break button{
+   color: blue;
 }
