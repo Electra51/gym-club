@@ -4,7 +4,17 @@ import Question from '../Question/Question';
 import './Shop.css';
 import image from '../../images/profile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationPin} from '@fortawesome/free-solid-svg-icons';
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+const notify = () => {
+    toast("Congratulation! you're done with new activity")
+}
+
+
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -81,7 +91,8 @@ const Shop = () => {
                 <div className='details'>
                     <p>Break Time: 00.00m</p>
                 </div>
-                <button className='btn-activity'>Activity Completed</button>
+                <button onClick={notify} className='btn-activity'>Activity Completed</button>
+               
             </div>
             <Question></Question>
       </div>
