@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -15,16 +15,19 @@ const notify = () => {
 
 const Cart = (props) => {
     
-
-    
     const { cart } = props;
-    const [count, setCount] = useState(0);
-    
+    const [items, setItems] = useState([]);
 
+    useEffect(() => {
+      localStorage.setItem('items', JSON.stringify(items));
+    }, [items]);
+    console.log(localStorage.getItem("items",));
+   
     let total = 0;
     for (const product of cart) {
         total = total + product.time;
     }
+   
     
     return (
         <div>
@@ -57,11 +60,11 @@ const Cart = (props) => {
                 <h4 className='Add-break'>Add a break</h4>
                 <div className='break'>
                     
-                        <button onClick={()=>setCount(10)} >10m</button>
-                        <button onClick={()=>setCount(20)}>20m</button>
-                        <button onClick={()=>setCount(30)}>30m</button>
-                        <button onClick={()=>setCount(40)}>40m</button>
-                        <button onClick={()=>setCount(50)}>50m</button>
+                <button onClick={()=>setItems(10)}>10m</button>
+                        <button onClick={()=>setItems(20)}>20m</button>
+                        <button onClick={()=>setItems(30)}>30m</button>
+                        <button onClick={()=>setItems(40)}>40m</button>
+                        <button onClick={()=>setItems(50)}>50m</button>
                    
 
                 </div>
@@ -70,7 +73,7 @@ const Cart = (props) => {
                     <p>Total Time: {total}m</p>
                 </div>
                 <div className='details'>
-                    <p>Break Time: {count}m</p>
+                    <p>Break Time: {items}m</p>
             </div>
             
                 <button onClick={notify} className='btn-activity'>Activity Completed</button>
