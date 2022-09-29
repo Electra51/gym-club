@@ -10,7 +10,7 @@
  background-color: rgb(131, 132, 134);;
  box-shadow: 0 0 3px;
  box-shadow: rgb(180, 205, 240);
- margin-bottom: 10px;
+ margin-bottom: 15px;
 }
 .Question-2{
     border: 1px solid rgb(159, 161, 168);
@@ -19,7 +19,7 @@
     background-color: rgb(131, 132, 134);;
     box-shadow: 0 0 3px;
     box-shadow: rgb(180, 205, 240);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    }
    .Question-3{
     border: 1px solid rgb(159, 161, 168);
@@ -28,7 +28,7 @@
     background-color: rgb(131, 132, 134);
     box-shadow: rgb(180, 205, 240);
     box-shadow: 0 0 3px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    }
    .Question-1:hover{
     background-color: rgb(41, 81, 141);

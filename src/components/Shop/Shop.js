@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import Question from '../Question/Question';
 import './Shop.css';
+import image from '../../images/profile.jpg';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -27,12 +28,48 @@ const Shop = () => {
 
             </div>
             <div className="select-container">
-                <div>
-                    <img src="" alt="" />
-                    <h4>Electra Nur</h4>
-                    <p>Dhaka,Bangladesh</p>
+                <div className=' my-profile'>
+                <img src={image} alt="" />
+                <div className='profile-info'>
+                <h4>Electra Nur</h4>
+                <p>Dhaka,Bangladesh</p>
+                  </div>
+                </div>
+                <div className="height-div">
+                    <div>
+                        <h3 className='yrs'>25<small>yrs</small></h3>
+                        <p className='Age'>Age</p>
+                    </div>
+                    <div>
+                    <h3 className='yrs'>5.4<small>"</small></h3>
+                        <p className='Age'>Height</p>
+
+                    </div>
+                    <div>
+                    <h3 className='yrs'>7.9<small>k</small></h3>
+                        <p className='Age'>Follower</p>
+
+                    </div>
+                </div>
+                <h4 className='Add-break'>Add a break</h4>
+                <div className='break'>
                     
-               </div>
+                        <p>10m</p>
+                        <p>20m</p>
+                        <p>30m</p>
+                        <p>40m</p>
+                        <p>50m</p>
+                   
+
+                </div>
+                <h4 className='Add-break'>Details</h4>
+                <div className='details'>
+                    <p>Total Time: 00.00m</p>
+                </div>
+                <div className='details'>
+                    <p>Break Time: 00.00m</p>
+                </div>
+                <button className='btn'>Activity Completed</button>
             </div>
             <Question></Question>
       </div>

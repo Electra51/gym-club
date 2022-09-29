@@ -14,3 +14,81 @@
     width:260px;
 
 }
+
+.select-container{
+    background-color: rgb(80, 81, 92); 
+}
+
+.my-profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.my-profile{
+    background-color: rgb(80, 81, 92);
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.profile-info h4{
+    margin: 0px;
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.profile-info p{
+    margin: 0px;
+    margin-left: 8px;
+    
+}
+.height-div{
+    display: flex;
+    
+    justify-content: space-between;
+    background-color:rgb(131, 132, 134) ;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 7px;
+}
+.Age{
+    margin: 0 2px;
+}
+.yrs{
+    margin: 0px ;
+    padding-left: 0;
+    color: black;
+}
+.break{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(131, 132, 134) ;
+    margin: 10px;
+    padding: 18px;
+    border-radius: 8px;
+}
+.Add-break{
+    margin-left: 10px;
+}
+.break p{
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+    margin: 0;
+}
+.break p:hover{
+    background-color: rgb(41, 81, 141);
+    color: white;
+}
+.details{
+    margin: 10px;
+    background-color:rgb(131, 132, 134) ;
+    border-radius: 3px;
+}
+.details p{
+    padding: 5px;
+}
+.btn{
+    
+}
