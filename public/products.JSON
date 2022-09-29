@@ -2,7 +2,7 @@
   {
     "id": "12344356778es",
     "name": "Barbell",
-    "paragraph":"A barbell is a piece of exercise equipment used in weight training, bodybuilding, .",
+    "paragraph":"A barbell is a piece of exercise equipment used in weight training, bodybuilding.",
     "time": 20,
     "img": "https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg"
     
@@ -18,7 +18,7 @@
     "id": "1234432778tg57s",
     "name": "Hand Gripper",
     "paragraph":"Hand grippers are an excellent, versatile grip training tool. Perfect for using on the move.",
-    "time": 20,
+    "time": 12,
     "img": "https://cdn.pixabay.com/photo/2016/03/27/19/21/healthy-1283793_960_720.jpg"
   },
   {
@@ -32,14 +32,14 @@
     "id": "123443232gh32",
     "name": "Dummbell",
     "paragraph":"The dumbbell, a type of free weight, is a piece of equipment used in weight training",
-    "time": 20,
+    "time": 22,
     "img": "https://cdn.pixabay.com/photo/2018/09/26/13/02/barbell-3704578_960_720.jpg"
   },
   {
     "id": "456874663hgd3527",
     "name": "Battle Rope",
     "paragraph":"Battle rope exercise are great for building  muscular strength, increase fitness, and performance.",
-    "time": 20,
+    "time": 55,
     "img": "https://cdn.pixabay.com/photo/2015/07/02/10/27/training-828764_960_720.jpg"
   }
   
